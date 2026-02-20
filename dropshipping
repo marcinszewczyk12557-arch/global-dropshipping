@@ -3,34 +3,84 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GLOBAL DROPSHIPPING™</title>
-<meta name="description" content="GLOBAL DROPSHIPPING™ - Oferta B2B | Hurt | Finansowanie | Dropshipping">
-<meta name="google-site-verification" content="TUTAJ_WKLEJ_KOD_Z_GOOGLE" />
+<title>Global Dropshipping | Profesjonalna Obsługa Zamówień</title>
+
+<meta name="description" content="Global Dropshipping – kompleksowa realizacja zamówień, obsługa e-commerce, magazynowanie i wysyłka międzynarodowa.">
+<meta name="keywords" content="dropshipping, e-commerce, realizacja zamówień, fulfillment, magazynowanie">
+<meta name="author" content="Global Dropshipping">
 
 <style>
 body {
-    margin:0;
+    margin: 0;
     font-family: Arial, sans-serif;
-    background:#f4f6f8;
-    color:#222;
+    background-color: #f4f6f9;
+    color: #333;
 }
+
 header {
-    background:#0a1a2f;
-    color:#fff;
-    padding:40px 20px;
-    text-align:center;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
 }
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 section {
-    max-width:1000px;
-    margin:40px auto;
-    padding:20px;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
 }
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1e3c72;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.contact {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 footer {
-    background:#0a1a2f;
-    color:#fff;
-    text-align:center;
-    padding:20px;
-    font-size:14px;
+    text-align: center;
+    padding: 20px;
+    background: #0f1f3d;
+    color: white;
 }
 </style>
 </head>
@@ -38,17 +88,40 @@ footer {
 <body>
 
 <header>
-<h1>GLOBAL DROPSHIPPING™</h1>
-<p>Oferta B2B | Hurt | Finansowanie</p>
+    <h1>Global Dropshipping</h1>
+    <p>Profesjonalna realizacja zamówień i obsługa e-commerce na całym świecie</p>
 </header>
 
 <section>
-<h2>Zakres działalności</h2>
-<p>Kompleksowa realizacja zamówień B2B w modelu dropshippingowym.</p>
+    <h2>Nasza Oferta</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Realizacja Zamówień</h3>
+            <p>Kompleksowa obsługa zamówień online – od przyjęcia po wysyłkę do klienta.</p>
+        </div>
+        <div class="card">
+            <h3>Magazynowanie</h3>
+            <p>Bezpieczne przechowywanie produktów w nowoczesnych magazynach.</p>
+        </div>
+        <div class="card">
+            <h3>Wysyłka Międzynarodowa</h3>
+            <p>Szybka i sprawna wysyłka na rynki europejskie i globalne.</p>
+        </div>
+        <div class="card">
+            <h3>Obsługa E-commerce</h3>
+            <p>Integracja z platformami sprzedażowymi i pełne wsparcie logistyczne.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact">
+    <h2>Kontakt</h2>
+    <p>Email: <a href="mailto:kontakt@globaldropshipping.pl">kontakt@globaldropshipping.pl</a></p>
+    <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
 </section>
 
 <footer>
-© 2026 GLOBAL DROPSHIPPING™ — Wszelkie prawa zastrzeżone.
+    © 2026 Global Dropshipping | Wszelkie prawa zastrzeżone
 </footer>
 
 </body>

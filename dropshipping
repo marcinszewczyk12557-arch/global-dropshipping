@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Global Dropshipping & Fulfillment | International Logistics Partner</title>
+<title>Global Fulfillment Group | Investment Opportunity</title>
 
-<meta name="description" content="Global Dropshipping & Fulfillment – International logistics partner for e-commerce brands. Warehousing, order fulfillment and global shipping solutions.">
-<meta name="keywords" content="global fulfillment, dropshipping partner, e-commerce logistics, international shipping, warehouse services">
-<meta name="author" content="Global Dropshipping">
+<meta name="description" content="Global Fulfillment Group – scalable international e-commerce logistics platform. Investment opportunity in high-growth fulfillment sector.">
+<meta name="keywords" content="logistics startup, fulfillment investment, e-commerce logistics, scalable logistics platform">
+<meta name="author" content="Global Fulfillment Group">
 
 <style>
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f5f7fa;
-    color: #333;
+    background: #f4f6f9;
+    color: #222;
 }
 
 header {
-    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
     color: white;
-    padding: 80px 20px;
+    padding: 90px 20px;
     text-align: center;
 }
 
 header h1 {
-    font-size: 44px;
+    font-size: 46px;
     margin: 0;
 }
 
@@ -59,15 +59,6 @@ h2 {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card h3 {
-    margin-top: 0;
 }
 
 .highlight {
@@ -81,17 +72,20 @@ h2 {
     color: white;
 }
 
-.contact {
+.cta {
     background: #0f2027;
     color: white;
     text-align: center;
-    padding: 60px 20px;
+    padding: 70px 20px;
 }
 
-.contact a {
-    color: #ffd700;
+.cta a {
+    background: #ffd700;
+    padding: 15px 30px;
     text-decoration: none;
+    color: black;
     font-weight: bold;
+    border-radius: 6px;
 }
 
 footer {
@@ -106,49 +100,79 @@ footer {
 <body>
 
 <header>
-    <h1>Global Dropshipping & Fulfillment</h1>
-    <p>Your International Logistics & E-commerce Partner</p>
+    <h1>Global Fulfillment Group</h1>
+    <p>Building the Next-Generation Scalable E-commerce Logistics Platform</p>
 </header>
 
 <section>
-    <h2>Our Services</h2>
+    <h2>Market Opportunity</h2>
     <div class="grid">
         <div class="card">
-            <h3>Order Fulfillment</h3>
-            <p>End-to-end order processing from warehouse to final customer delivery worldwide.</p>
+            <h3>Growing E-commerce Market</h3>
+            <p>Global e-commerce continues double-digit growth, increasing demand for reliable cross-border logistics.</p>
         </div>
         <div class="card">
-            <h3>International Shipping</h3>
-            <p>Reliable cross-border logistics solutions for global e-commerce brands.</p>
+            <h3>Fragmented Fulfillment Sector</h3>
+            <p>Small and mid-sized brands lack scalable and integrated international fulfillment solutions.</p>
         </div>
         <div class="card">
-            <h3>Warehousing Solutions</h3>
-            <p>Secure storage, inventory management and real-time stock monitoring.</p>
-        </div>
-        <div class="card">
-            <h3>E-commerce Integration</h3>
-            <p>Integration with Shopify, WooCommerce and major marketplaces.</p>
+            <h3>High Margin Logistics Services</h3>
+            <p>Technology-driven fulfillment offers strong recurring revenue and scalable margins.</p>
         </div>
     </div>
 </section>
 
 <section class="highlight">
-    <h2>Why Choose Us</h2>
-    <p>✔ Fast processing times</p>
-    <p>✔ Scalable logistics solutions</p>
-    <p>✔ International experience</p>
-    <p>✔ Dedicated B2B support</p>
+    <h2>Our Solution</h2>
+    <p>We provide an integrated fulfillment platform combining warehousing, automation, cross-border shipping and e-commerce integration.</p>
 </section>
 
-<section class="contact">
-    <h2>Contact Our Team</h2>
-    <p>Email: <a href="mailto:contact@globalfulfillment-group.com">contact@globalfulfillment-group.com</a></p>
-    <p>Phone: <a href="tel:+48123456789">+48 123 456 789</a></p>
-    <p>Location: Europe</p>
+<section>
+    <h2>Business Model</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Fulfillment Fees</h3>
+            <p>Per-order processing and handling fees.</p>
+        </div>
+        <div class="card">
+            <h3>Storage Fees</h3>
+            <p>Recurring warehouse storage revenue.</p>
+        </div>
+        <div class="card">
+            <h3>Shipping Margins</h3>
+            <p>Optimized carrier contracts with scalable margin structure.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Scalability Strategy</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Automation & Technology</h3>
+            <p>System-driven operations reduce labor cost per order.</p>
+        </div>
+        <div class="card">
+            <h3>International Expansion</h3>
+            <p>Strategic warehouse hubs in Europe and global markets.</p>
+        </div>
+        <div class="card">
+            <h3>B2B Partnerships</h3>
+            <p>Long-term contracts with growing e-commerce brands.</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <h2>Investment Opportunity</h2>
+    <p>We are seeking strategic investors to accelerate international expansion and technology development.</p>
+    <p>Contact us for investor deck and financial projections.</p>
+    <br>
+    <a href="mailto:investors@globalfulfillment-group.com">Contact Investor Relations</a>
 </section>
 
 <footer>
-    © 2026 Global Dropshipping & Fulfillment | International Logistics Group
+    © 2026 Global Fulfillment Group | Confidential Investor Presentation
 </footer>
 
 </body>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://marcinszewczyk12557-arch.github.io/global-dropshipping/sitemap.xml

@@ -1,161 +1,61 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: 'Poppins', sans-serif;
-}
-
 body {
-background: #0f172a;
-color: white;
-line-height: 1.6;
-scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
 }
 
-.container {
-width: 90%;
-max-width: 1100px;
-margin: auto;
+header.premium-header {
+    background: #111;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header {
-background: rgba(15,23,42,0.9);
-padding: 20px 0;
-position: fixed;
-width: 100%;
-top: 0;
-z-index: 1000;
-backdrop-filter: blur(10px);
+header img.premium-logo {
+    height: 60px;
 }
 
-.nav {
-display: flex;
-justify-content: space-between;
-align-items: center;
-}
-
-nav a {
-color: white;
-margin-left: 25px;
-text-decoration: none;
-font-weight: 500;
-transition: 0.3s;
-}
-
-nav a:hover {
-color: #3b82f6;
+nav.main-nav a {
+    color: gold;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
 }
 
 .hero {
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-background: linear-gradient(135deg,#1e3a8a,#2563eb,#1e40af);
-background-size: 400% 400%;
-animation: gradient 10s ease infinite;
-padding-top: 80px;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-@keyframes gradient {
-0% {background-position: 0% 50%;}
-50% {background-position: 100% 50%;}
-100% {background-position: 0% 50%;}
+.hero h1 {
+    font-size: 2.5rem;
+    color: gold;
 }
 
-.hero h2 {
-font-size: 48px;
-margin-bottom: 20px;
+.btn-contact {
+    display: inline-block;
+    margin-top: 20px;
+    background: gold;
+    color: #000;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
 }
 
-.hero p {
-font-size: 20px;
-margin-bottom: 30px;
+.features {
+    padding: 50px 20px;
+    background: #111;
 }
 
-.btn {
-display: inline-block;
-padding: 14px 28px;
-background: white;
-color: #1e3a8a;
-text-decoration: none;
-font-weight: 600;
-border-radius: 30px;
-transition: 0.3s;
+.features ul {
+    list-style: none;
+    padding: 0;
 }
 
-.btn:hover {
-background: #e0e7ff;
-transform: scale(1.05);
+.features li {
+    margin: 10px 0;
 }
-
-.section {
-padding: 100px 0;
-text-align: center;
-}
-
-.dark {
-background: #111827;
-}
-
-.cards {
-display: flex;
-justify-content: center;
-gap: 30px;
-margin-top: 40px;
-flex-wrap: wrap;
-}
-
-.card {
-background: #1f2937;
-padding: 30px;
-border-radius: 15px;
-width: 300px;
-transition: 0.3s;
-}
-
-.card:hover {
-transform: translateY(-10px);
-background: #2563eb;
-}
-
-form {
-display: flex;
-flex-direction: column;
-max-width: 500px;
-margin: 40px auto 0;
-}
-
-form input, form textarea {
-padding: 12px;
-margin-bottom: 15px;
-border: none;
-border-radius: 8px;
-}
-
-button {
-padding: 12px;
-background: #2563eb;
-color: white;
-border: none;
-border-radius: 8px;
-cursor: pointer;
-font-weight: 600;
-transition: 0.3s;
-}
-
-button:hover {
-background: #1e40af;
-}
-
-footer {
-background: #0b1120;
-padding: 30px;
-text-align: center;
-}
-<title>Hurtownia dropshipping 84% ceny detalicznej | Global Dropshipping</title>
-<meta name="description" content="Oferta hurtowa 84% najniższej ceny detalicznej. MOQ, rabaty ilościowe, eksport. Sprawdź kategorie produktów.">
-<meta name="robots" content="index, follow">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">

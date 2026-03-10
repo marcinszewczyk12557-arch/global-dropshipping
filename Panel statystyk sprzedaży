@@ -1,0 +1,24 @@
+<h2>Statystyki sprzedaży</h2>
+
+<div id="stats"></div>
+
+<script>
+
+async function loadStats(){
+
+let res=await fetch("/orders")
+let data=await res.json()
+
+let total=0
+
+data.forEach(o=>total+=o.price)
+
+document.getElementById("stats").innerHTML=
+
+"Sprzedaż łączna: "+total+" PLN"
+
+}
+
+loadStats()
+
+</script>

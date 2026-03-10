@@ -3,91 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Menu Kategorii - Dropshipping</title>
+<title>Dropshipping - Kategorie</title>
 <style>
-  /* Reset */
-  * { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family: Arial, sans-serif; background:#f8f9fa; }
 
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-  }
-
-  /* Navbar */
   nav {
     background-color: #007BFF;
     color: white;
     padding: 1rem;
-    position: relative;
+    position: sticky;
+    top:0;
+    z-index: 1000;
   }
+  nav h1 { font-size: 1.5rem; display:inline-block; }
+  .menu-toggle { display:none; font-size:1.5rem; cursor:pointer; float:right; }
 
-  nav h1 {
-    font-size: 1.5rem;
-  }
-
-  /* Menu toggle button for mobile */
-  .menu-toggle {
-    display: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    position: absolute;
-    right: 1rem;
-    top: 1rem;
-  }
-
-  /* Menu list */
   nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    gap:0.5rem;
+    margin-top:0.5rem;
   }
-
-  nav ul li {
-    margin: 0.2rem 0;
-  }
-
   nav ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    display: block;
-    border-radius: 5px;
-    transition: background 0.3s;
+    text-decoration:none;
+    color:white;
+    padding:0.5rem 1rem;
+    display:block;
+    border-radius:5px;
+    transition:0.3s;
+  }
+  nav ul li a:hover { background:rgba(255,255,255,0.2); }
+
+  @media(max-width:768px){
+    .menu-toggle{ display:block; }
+    nav ul { display:none; flex-direction:column; gap:0; margin-top:0.5rem; }
+    nav ul.show { display:flex; }
+    nav ul li a { padding:0.8rem; border-bottom:1px solid rgba(255,255,255,0.2);}
   }
 
-  nav ul li a:hover {
-    background-color: rgba(255,255,255,0.2);
-  }
-
-  /* Mobile */
-  @media (max-width: 768px) {
-    .menu-toggle {
-      display: block;
-    }
-
-    nav ul {
-      display: none;
-      flex-direction: column;
-      gap: 0;
-      margin-top: 1rem;
-    }
-
-    nav ul.show {
-      display: flex;
-    }
-
-    nav ul li a {
-      padding: 0.8rem;
-      border-bottom: 1px solid rgba(255,255,255,0.2);
-    }
-  }
+  section { padding:2rem; border-bottom:1px solid #ddd; background:white; margin:0.5rem; border-radius:5px;}
+  section h2 { margin-bottom:1rem; color:#007BFF;}
 </style>
 </head>
 <body>
 
 <nav>
-  <h1>Menu Kategorii</h1>
+  <h1>Dropshipping</h1>
   <span class="menu-toggle">&#9776;</span>
   <ul>
     <li><a href="#elektronika">Elektronika użytkowa</a></li>
@@ -130,12 +93,49 @@
   </ul>
 </nav>
 
+<!-- Sekcje kategorii -->
+<section id="elektronika"><h2>Elektronika użytkowa</h2><p>Przykładowe produkty...</p></section>
+<section id="bezpieczenstwo"><h2>Bezpieczeństwo</h2><p>Przykładowe produkty...</p></section>
+<section id="maszyny-przemyslowe"><h2>Maszyny przemysłowe</h2><p>Przykładowe produkty...</p></section>
+<section id="chemikalia"><h2>Chemikalia</h2><p>Przykładowe produkty...</p></section>
+<section id="tkaniny"><h2>Tkaniny i surowce tekstylne</h2><p>Przykładowe produkty...</p></section>
+<section id="komponenty"><h2>Komponenty elektroniczne i telekomunikacja</h2><p>Przykładowe produkty...</p></section>
+<section id="narzedzia"><h2>Narzędzia i sprzęt</h2><p>Przykładowe produkty...</p></section>
+<section id="prezenty"><h2>Prezenty i rękodzieło</h2><p>Przykładowe produkty...</p></section>
+<section id="rolnictwo"><h2>Rolnictwo</h2><p>Przykładowe produkty...</p></section>
+<section id="sprzet-comm"><h2>Sprzęt i maszyny komercyjne</h2><p>Przykładowe produkty...</p></section>
+<section id="odziez"><h2>Odzież i akcesoria</h2><p>Przykładowe produkty...</p></section>
+<section id="srodowisko"><h2>Środowisko</h2><p>Przykładowe produkty...</p></section>
+<section id="instrumenty"><h2>Instrumenty i sprzęt testowy</h2><p>Przykładowe produkty...</p></section>
+<section id="pojazdy"><h2>Pojazdy i transport</h2><p>Przykładowe produkty...</p></section>
+<section id="bizuteria"><h2>Biżuteria, okulary i zegarki</h2><p>Przykładowe produkty...</p></section>
+<section id="obuwie"><h2>Obuwie i akcesoria</h2><p>Przykładowe produkty...</p></section>
+<section id="dom-ogród"><h2>Dom i ogród</h2><p>Przykładowe produkty...</p></section>
+<section id="mama-dzieci"><h2>Mama, dzieci i zabawki</h2><p>Przykładowe produkty...</p></section>
+<section id="energia"><h2>Energia odnawialna</h2><p>Przykładowe produkty...</p></section>
+<section id="uroda"><h2>Uroda</h2><p>Przykładowe produkty...</p></section>
+<section id="sport"><h2>Sport i rozrywka</h2><p>Przykładowe produkty...</p></section>
+<section id="opieka-zdrowotna"><h2>Opieka zdrowotna</h2><p>Przykładowe produkty...</p></section>
+<section id="sprzet-agd"><h2>Sprzęt elektryczny i AGD</h2><p>Przykładowe produkty...</p></section>
+<section id="agd"><h2>AGD</h2><p>Przykładowe produkty...</p></section>
+<section id="akcesoria-auto"><h2>Akcesoria samochodowe</h2><p>Przykładowe produkty...</p></section>
+<section id="budownictwo"><h2>Budownictwo i nieruchomości</h2><p>Przykładowe produkty...</p></section>
+<section id="meble"><h2>Meble</h2><p>Przykładowe produkty...</p></section>
+<section id="oswietlenie"><h2>Oświetlenie</h2><p>Przykładowe produkty...</p></section>
+<section id="maszyny-budowlane"><h2>Maszyny budowlane</h2><p>Przykładowe produkty...</p></section>
+<section id="zwierzeta"><h2>Artykuły dla zwierząt</h2><p>Przykładowe produkty...</p></section>
+<section id="czesci-auto"><h2>Części i akcesoria samochodowe</h2><p>Przykładowe produkty...</p></section>
+<section id="logistyka"><h2>Usługi logistyczne</h2><p>Przykładowe produkty...</p></section>
+<section id="pakowanie"><h2>Pakowanie i drukowanie</h2><p>Przykładowe produkty...</p></section>
+<section id="bagaz"><h2>Bagaż, torby i walizki</h2><p>Przykładowe produkty...</p></section>
+<section id="metale"><h2>Metale i stopy</h2><p>Przykładowe produkty...</p></section>
+<section id="szkolne"><h2>Artykuły szkolne i biurowe</h2><p>Przykładowe produkty...</p></section>
+<section id="pielegnacja"><h2>Pielęgnacja osobista i sprzątanie domu</h2><p>Przykładowe produkty...</p></section>
+
 <script>
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('nav ul');
-  toggle.addEventListener('click', () => {
-    menu.classList.toggle('show');
-  });
+  toggle.addEventListener('click', () => { menu.classList.toggle('show'); });
 </script>
 
 </body>

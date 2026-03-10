@@ -1,0 +1,11 @@
+global-dropshipping-platform/
+
+server.js
+database.db
+
+/public
+   index.html
+   dashboard.html
+   admin.html
+   ai-offer.html
+   styles.css

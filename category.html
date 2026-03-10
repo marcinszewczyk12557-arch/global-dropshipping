@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategoria</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; }
+        h1 { text-align: center; }
+        #categoryContent { margin-top: 20px; text-align: center; }
+        a { display: block; text-align: center; margin-top: 20px; color: #007bff; }
+    </style>
+</head>
+<body>
+    <h1 id="categoryTitle">Kategoria</h1>
+    <div id="categoryContent">Ładowanie zawartości...</div>
+    <a href="index.html">← Powrót do listy kategorii</a>
+
+    <script>
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        async function loadCategoryContent() {
+            const catId = getQueryParam('cat');
+            const responseMap = await fetch('suite.map');
+            const data = await responseMap.json();
+            const category = data.categories.find(c => c.id === catId);
+
+            if (!category) {
+                document.getElementById('categoryTitle').textContent = "Nieznana kategoria";
+                document.getElementById('categoryContent').textContent = "Nie znaleziono takiej kategorii.";
+                return;
+            }
+
+            document.getElementById('categoryTitle').textContent = category.name;
+
+            try {
+                // Ładowanie zawartości z osobnego pliku HTML
+                const responseContent = await fetch(`categories/${catId}.html`);
+                if (!responseContent.ok) throw new Error('Nie można wczytać pliku kategorii.');
+                const html = await responseContent.text();
+                document.getElementById('categoryContent').innerHTML = html;
+            } catch (err) {
+                console.error(err);
+                document.getElementById('categoryContent').textContent = 
+                    "Wystąpił problem podczas ładowania zawartości kategorii.";
+            }
+        }
+
+        loadCategoryContent();
+    </script>
+</body>
+</html>

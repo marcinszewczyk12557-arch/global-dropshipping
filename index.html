@@ -1,45 +1,142 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kategorie dynamiczne</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; background-color: #f4f4f4; }
-        h1 { text-align: center; }
-        ul.categories { list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
-        ul.categories li { background: #fff; margin: 10px; padding: 20px; border-radius: 8px;
-                            box-shadow: 0 2px 5px rgba(0,0,0,0.2); cursor: pointer; transition: transform 0.2s; }
-        ul.categories li:hover { transform: scale(1.05); }
-        a { text-decoration: none; color: inherit; display: block; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu Kategorii - Dropshipping</title>
+<style>
+  /* Reset */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+
+  /* Navbar */
+  nav {
+    background-color: #007BFF;
+    color: white;
+    padding: 1rem;
+    position: relative;
+  }
+
+  nav h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Menu toggle button for mobile */
+  .menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  /* Menu list */
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  nav ul li {
+    margin: 0.2rem 0;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: block;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+
+  nav ul li a:hover {
+    background-color: rgba(255,255,255,0.2);
+  }
+
+  /* Mobile */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+
+    nav ul {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      margin-top: 1rem;
+    }
+
+    nav ul.show {
+      display: flex;
+    }
+
+    nav ul li a {
+      padding: 0.8rem;
+      border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+  }
+</style>
 </head>
 <body>
-    <h1>Kategorie</h1>
-    <ul class="categories" id="categoryList"></ul>
 
-    <script>
-        async function loadCategories() {
-            try {
-                const response = await fetch('suite.map');
-                if (!response.ok) throw new Error('Nie można załadować suite.map');
-                const data = await response.json();
-                const list = document.getElementById('categoryList');
+<nav>
+  <h1>Menu Kategorii</h1>
+  <span class="menu-toggle">&#9776;</span>
+  <ul>
+    <li><a href="#elektronika">Elektronika użytkowa</a></li>
+    <li><a href="#bezpieczenstwo">Bezpieczeństwo</a></li>
+    <li><a href="#maszyny-przemyslowe">Maszyny przemysłowe</a></li>
+    <li><a href="#chemikalia">Chemikalia</a></li>
+    <li><a href="#tkaniny">Tkaniny i surowce tekstylne</a></li>
+    <li><a href="#komponenty">Komponenty elektroniczne i telekomunikacja</a></li>
+    <li><a href="#narzedzia">Narzędzia i sprzęt</a></li>
+    <li><a href="#prezenty">Prezenty i rękodzieło</a></li>
+    <li><a href="#rolnictwo">Rolnictwo</a></li>
+    <li><a href="#sprzet-comm">Sprzęt i maszyny komercyjne</a></li>
+    <li><a href="#odziez">Odzież i akcesoria</a></li>
+    <li><a href="#srodowisko">Środowisko</a></li>
+    <li><a href="#instrumenty">Instrumenty i sprzęt testowy</a></li>
+    <li><a href="#pojazdy">Pojazdy i transport</a></li>
+    <li><a href="#bizuteria">Biżuteria, okulary i zegarki</a></li>
+    <li><a href="#obuwie">Obuwie i akcesoria</a></li>
+    <li><a href="#dom-ogród">Dom i ogród</a></li>
+    <li><a href="#mama-dzieci">Mama, dzieci i zabawki</a></li>
+    <li><a href="#energia">Energia odnawialna</a></li>
+    <li><a href="#uroda">Uroda</a></li>
+    <li><a href="#sport">Sport i rozrywka</a></li>
+    <li><a href="#opieka-zdrowotna">Opieka zdrowotna</a></li>
+    <li><a href="#sprzet-agd">Sprzęt elektryczny i AGD</a></li>
+    <li><a href="#agd">AGD</a></li>
+    <li><a href="#akcesoria-auto">Akcesoria samochodowe</a></li>
+    <li><a href="#budownictwo">Budownictwo i nieruchomości</a></li>
+    <li><a href="#meble">Meble</a></li>
+    <li><a href="#oswietlenie">Oświetlenie</a></li>
+    <li><a href="#maszyny-budowlane">Maszyny budowlane</a></li>
+    <li><a href="#zwierzeta">Artykuły dla zwierząt</a></li>
+    <li><a href="#czesci-auto">Części i akcesoria samochodowe</a></li>
+    <li><a href="#logistyka">Usługi logistyczne</a></li>
+    <li><a href="#pakowanie">Pakowanie i drukowanie</a></li>
+    <li><a href="#bagaz">Bagaż, torby i walizki</a></li>
+    <li><a href="#metale">Metale i stopy</a></li>
+    <li><a href="#szkolne">Artykuły szkolne i biurowe</a></li>
+    <li><a href="#pielegnacja">Pielęgnacja osobista i sprzątanie domu</a></li>
+  </ul>
+</nav>
 
-                data.categories.forEach(cat => {
-                    const li = document.createElement('li');
-                    const link = document.createElement('a');
-                    link.href = `category.html?cat=${encodeURIComponent(cat.id)}`;
-                    link.textContent = cat.name;
-                    li.appendChild(link);
-                    list.appendChild(li);
-                });
-            } catch (err) {
-                console.error(err);
-            }
-        }
+<script>
+  const toggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('nav ul');
+  toggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+  });
+</script>
 
-        loadCategories();
-    </script>
 </body>
 </html>
